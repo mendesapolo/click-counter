@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador de clicks</title>
+
+  <link href="public/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header id="menu">
+
+  </header>
+  <section class="header">
+    <h1 class="title">Contador de clicks</h1>
+  </section>
+
+  <section class="show-information">
+    <div class="si-item">
+      <span>CPS</span>
+      <span class="text-blue" id="cpsLabel">0</span>
+    </div>
+    <div class="si-item">
+      <span>PONTOS</span>
+      <span class="text-yellow" id="clickLabel">0</span>
+    </div>
+    <div class="si-item">
+      <span>TEMPO</span>
+      <span class="text-red" id="timerLabel">0</span>
+    </div>
+  </section>
+
+  <section class="main-container">
+    <div class="element-group">
+      <div class="eg-item">
+        <label for="timeSelector">5s</label>
+        <input type="radio" name="timeSelector" value="5" />
+      </div>
+
+      <div class="eg-item active">
+        <label for="timeSelector">10s</label>
+        <input type="radio" name="timeSelector" selected value="10" />
+      </div>
+
+      <div class="eg-item">
+        <label for="timeSelector">20s</label>
+        <input type="radio" name="timeSelector" value="20" />
+      </div>
+
+      <div class="eg-item">
+        <label for="timeSelector">30s</label>
+        <input type="radio" name="timeSelector" value="30" />
+      </div>
+
+      <div class="eg-item">
+        <label for="timeSelector">40s</label>
+        <input type="radio" name="timeSelector" value="40" />
+      </div>
+
+      <div class="eg-item">
+        <label for="timeSelector">50s</label>
+        <input type="radio" name="timeSelector" value="50" />
+      </div>
+
+      <div class="eg-item">
+        <label for="timeSelector">60s</label>
+        <input type="radio" name="timeSelector" value="60" />
+      </div>
+    </div>
+
+    <section id="click-area">
+      <span id="click-area-text">Click Here To Start</span>
+      <button class="btn-restart" id="restartBtn">
+        <i data-feather="refresh-cw"></i>
+      </button>
+    </section>
+  </section>
+
+  <section class="footer-container">
+    <button class="btn-full play-regular btn-red" id="btnCancel">
+      <i data-feather="x" stroke="#000"></i> Cancel
+    </button>
+  </section>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js">
+    feather.replace();
+  </script>
+  <script src="public/scripts/app.js"></script>
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>
